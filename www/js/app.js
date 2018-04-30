@@ -20,6 +20,18 @@ angular.module('Chat', ['ionic', 'firebase', 'Chat.controllers', 'Chat.services'
       StatusBar.styleDefault();
     }
 
+    FCMPlugin.onNotification(function(data){
+      if(data.wasTapped){
+          //Notification was received on device tray and tapped by the user.
+          console.log("Notification received: "+Json.stringify(data));
+         
+         
+      } else {
+          //Notification was received in foreground. Maybe the user needs to be notified.
+         alert( JSON.stringify(data) );
+      }
+  });
+
 
     Auth.$onAuthStateChanged(function (authData) {
       if (authData) {

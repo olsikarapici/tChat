@@ -15,7 +15,8 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
-      "ionic-plugin-keyboard": {}
+      "ionic-plugin-keyboard": {},
+      "cordova-plugin-fcm": {}
     },
     "platforms": [
       "android"
@@ -24,6 +25,7 @@
   "dependencies": {
     "cordova-android": "~6.3.0",
     "cordova-plugin-device": "^2.0.1",
+    "cordova-plugin-fcm": "^2.1.2",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.1.16",
     "cordova-plugin-splashscreen": "^5.0.2",

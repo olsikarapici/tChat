@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.olsikarapici.tchat" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>tChat</name>
     <description>A chat mobile application for Android and iOS devices built with Ionic Framework and Firebase as a backend. This projected started with learning in mind. It's meant to be used as a way to help students of Herman Gmeinner High School in Tirana Albania to learn by doing and also use it as a tool to communicate with one-another.</description>
     <author email="olsikarapici@gmail.com" href="https://github.com/olsikarapici/tChat">Olsi Karapici</author>
@@ -83,4 +83,5 @@
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <engine name="android" spec="~6.3.0" />
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
+    <plugin name="cordova-plugin-fcm" spec="^2.1.2" />
 </widget>

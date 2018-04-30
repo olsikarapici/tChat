@@ -126,14 +126,19 @@
           template: 'Signing Up...'
         });
         Auth.$createUserWithEmailAndPassword(user.email, user.password).then(function (userData) {
-          ref.child("users").child(userData.uid).set({
-            id: userData.uid,
-            email: user.email,
-            username: user.username
+          //fcm token
+          FCMPlugin.getToken(function(token){
+            ref.child("users").child(userData.uid).set({
+              id: userData.uid,
+              email: user.email,
+              username: user.username,
+              token: token
+            });
+            $ionicLoading.hide();
+            login.call(self, user);
+            deferred.resolve();
           });
-          $ionicLoading.hide();
-          login.call(self, user);
-          deferred.resolve();
+          
         }).catch(function (error) {
           alert("Error: " + error);
           $ionicLoading.hide();

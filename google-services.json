@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "866220362559",
+    "firebase_url": "https://tchat-105b9.firebaseio.com",
+    "project_id": "tchat-105b9",
+    "storage_bucket": "tchat-105b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866220362559:android:42fae7a6c8711711",
+        "android_client_info": {
+          "package_name": "com.olsikarapici.tchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866220362559-ncg31qclcavet8vihnlr4miakmgthg42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMzdYWqMJoc5t0MiWYqsh3KI7FXKBVA5o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
